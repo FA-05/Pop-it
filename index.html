@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop it</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">NOT_A_BUBBLE.COM</div>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-item">ABOUT</a>
+            <a href="#" class="header__nav-item">SALE</a>
+            <a href="#" class="header__nav-item">CONTACTS</a>
+        </nav>
+        <img id="Hamburger_menu" class="header__hamburger" src="images/hamburger-menu.png" alt="">
+    </header>
+
+    <section class="mobileMenu">
+        <a href="#" class="mobileMenu-item">ABOUT</a>
+        <a href="#" class="mobileMenu-item">SALE</a>
+        <a href="#" class="mobileMenu-item">CONTACTS</a>
+        <img id="close_icon" src="images/close-icon.png" alt="">
+    </section>
+
+
+    <main >
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">POP IT!</h1>
+                <p class="hero__description">Best Antistress Toy is the Endless toy bubble wrap!</p>
+                <a class="hero__button">BUY</a>
+            </div>
+            <div class="hero__imageBox">
+                <img class="hero__image" src="images/background.png" alt="">
+            </div>
+        </section>
+
+
+
+        <section class="info">
+            <h1 class="info__title">What is Pop it exactly?</h1>
+            <p class="info__text">
+                This is a child's game, in which the process can be compared to the bursting of a bubble wrap. 
+                But unlike film, pop-it can be pressed with the same characteristic sensations and sounds "endlessly":
+                dozens of silicone bubbles are simply squeezed out in the other direction.
+            </p>
+        </section>
+
+        <section class="products">
+            <h1 class="products__title">Choose your Pop-It!</h1>
+            <div class="cards">
+                <div class="card__box">
+                    <img class="card__image" src="images/square.png" alt="">
+                    <p class="card__name">Multicolored square</p>
+                    <div class="card__bottom">
+                        <a class="card__bottom__btn" href="">Buy</a>
+                    </div>
+                </div>
+    
+                <div class="card__box">
+                    <img class="card__image" src="images/amongus.png" alt="">
+                    <p class="card__name">Among Us, marbled</p>
+                    <div class="card__bottom">
+                        <a class="card__bottom__btn" href="">Buy</a>
+                    </div>
+                </div>
+    
+                <div class="card__box">
+                    <img class="card__image" src="images/round.png" alt="">
+                    <p class="card__name">Multicolored round</p>
+                    <div class="card__bottom">
+                        <a class="card__bottom__btn" href="">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules">
+            <div class="rules__content">
+                <h1 class="rules__title">Rules of the game</h1>
+                <p class="rules__text">
+                    Players take turns and click on the bumps. It is imperative to finish the row that you started.
+                    You can press a maximum of 3 bubbles at the same time (they must be near, you cannot press several pimples at once,
+                    if they are not close to each other) The task is to make the opponent go last. Who went last - he lost!
+                </p>
+                <img class="rules__background__img" src="images/bg-grid.png" alt="">
+            </div>
+            <img class="rules__img"  src="images/photo.jpg" alt="">
+
+        </section>
+
+        
+    </main>
+    
+    <footer class="footer">
+        <a class="footer__element footer__logo" href="#">NOT_A_BUBBLE.COM</a>
+        <a class="footer__element" href="#">Payment Methods</a>
+        <a class="footer__element" href="#">Delivery</a>
+        <a class="footer__element" href="#">Wholesale</a>
+        <a class="footer__element" href="#">Contacts</a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const Hamburger= document.getElementById("Hamburger_menu");
+            const close_icon= document.getElementById("close_icon");
+            const mobileMenu = document.querySelector(".mobileMenu");
+
+    
+            Hamburger.addEventListener("click",  function(){
+                mobileMenu.style.visibility = "visible";
+            })
+    
+            close_icon.addEventListener("click",  function(){
+                mobileMenu.style.visibility = "hidden";
+            })
+        
+        })
+    </script>
+
+
+</body>
+</html>
